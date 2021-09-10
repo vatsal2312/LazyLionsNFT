@@ -1,0 +1,43 @@
+.pagination {
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 0px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px;
+}
+
+.pageItem {
+  background-color: var(--white);
+  color: var(--black);
+  width: 2.7rem;
+  height: 2.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pageItem:not(:last-child) {
+  margin-right: 0.4rem;
+}
+
+.activeItem {
+  background-color: var(--color-gold);
+  color: var(--white);
+}
+
+.disabledButton {
+  display: none;
+}
+
+@media only screen and (min-width: 425px) {
+  .pagination {
+    font-size: 2rem;
+  }
+
+  .pageItem {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+}

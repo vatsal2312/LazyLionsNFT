@@ -1,0 +1,627 @@
+.dashboard {
+  background-color: var(--color-gray-1);
+  min-height: 100vh;
+}
+
+.container {
+  padding: 0px 1rem;
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0px auto;
+}
+
+.navbar {
+  height: 85px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar_nav {
+  margin-left: auto;
+  margin-bottom: 0px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+.navbar_nav li:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.profileInfoBox {
+  text-align: center;
+  background-color: var(--color-gray-2);
+  padding: 2rem 0.5rem 0.5rem 0.5rem;
+  position: relative;
+}
+
+.diamondMemberProfileInfoBox {
+  background-color: var(--color-diamond-paws);
+}
+
+.diamondMemberIcon {
+  position: absolute;
+  top: 8px;
+  left: 5px;
+}
+
+.donatedToCharityMemberIcon {
+  position: absolute;
+  top: 8px;
+  right: 5px;
+}
+
+.userProfileImage {
+  height: 150px;
+  border-radius: 50%;
+}
+
+.userEthAddress {
+  margin-top: 2rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.userIconsBox {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.iconItemBox {
+  flex-grow: 1;
+  padding: 0.2rem;
+}
+
+.iconItem {
+  position: relative;
+  background-color: var(--color-gray-1);
+  padding: 0.5rem 1.5rem;
+  height: 100%;
+}
+
+.iconItemGold {
+  background-color: var(--color-gold);
+  color: var(--white);
+}
+
+.iconItemInfoButton {
+  position: absolute;
+  background-color: var(--color-diamond-paws);
+  border: none;
+  outline: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  top: 0.3rem;
+  right: 0.3rem;
+}
+
+.iconItemInfoGoldButton {
+  background-color: var(--color-gold-light);
+  color: var(--white);
+}
+
+.iconItemTitle {
+  margin-bottom: 0px;
+  margin-top: 0.2rem;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.connectionsInfo {
+  background-color: var(--white);
+  padding: 2rem 2rem 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.connectBox:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.connectBoxTitleBox {
+  display: flex;
+  align-items: center;
+}
+
+.connectBoxTitleBox button {
+  background-color: var(--color-diamond-paws);
+  color: var(--white);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  padding: 2px;
+  font-size: 1rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 4px;
+}
+
+.connectBoxTitleBox p {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.connectBox a:link,
+.connectBox a:visited {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: var(--color-gold);
+  position: relative;
+}
+
+.connectBox a:hover {
+  color: var(--color-gold);
+}
+
+.connectBox a::before {
+  content: "";
+  border-bottom: solid 1px var(--color-gold);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  opacity: 0;
+}
+
+.connectBox a:hover::before {
+  opacity: 1;
+}
+
+.connectBox a,
+.connectBox a::before {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.userLazyLionsBox p {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+
+.userLazyLions {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 345px;
+}
+
+.userLion {
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-right: 0.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.userLion img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.donationButtonBox {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 2rem;
+}
+
+.donationPledgText {
+  font-size: 1.2rem;
+  color: var(--color-gold);
+  text-align: left;
+  font-style: italic;
+}
+
+.donationButtonBox span {
+  display: block;
+}
+
+.donationButtonBox button {
+  padding: 0.6rem 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 15rem;
+}
+
+.donationButtonBox span:first-child {
+  font-size: 2.6rem;
+  line-height: 100%;
+}
+
+.donationButtonBox span:last-child {
+  font-size: 1.3rem;
+  line-height: 100%;
+}
+
+.prideSection {
+  padding: 3rem 0px;
+}
+
+.sectionTitleBox {
+  margin-bottom: 1.5rem;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.sortMenu {
+  background-color: transparent;
+  border: none;
+  width: auto;
+  font-size: 1.2rem;
+  display: inline-block;
+  background-position: right 0.4rem center;
+  padding-left: 4px;
+  margin-bottom: 3px;
+}
+
+.userCardItem {
+  padding: 0.3rem;
+  min-height: 5rem;
+}
+
+.userCard {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem 0.5rem 0.5rem 1.2rem;
+  background-color: var(--white);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.userCardDiamond {
+  background-color: var(--color-diamond-paws);
+}
+
+.userCardAvatar {
+  border-radius: 50%;
+  height: 40px;
+}
+
+.userCardUsername:link,
+.userCardUsername:visited {
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin-left: 1rem;
+  text-decoration: none;
+  color: #666;
+}
+
+.userCardIconBox {
+  margin-left: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.paginationBox {
+  margin-top: 1.5rem;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+.footer ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.footer ul li a:link,
+.footer ul li a:visited {
+  display: block;
+  text-decoration: none;
+  color: var(--black);
+  padding: 0.5rem 0px;
+  font-size: 1.2rem;
+  position: relative;
+}
+
+.footer ul li a:hover {
+  color: var(--color-gold);
+}
+
+.footer ul li a::before {
+  content: "";
+  border-bottom: solid 1px var(--color-gold);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  opacity: 0;
+}
+
+.footer ul li a:hover::before {
+  opacity: 1;
+}
+
+.footer ul li a,
+.footer ul li a::before {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.footerCopy {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.footerIconsBox {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.footerIcon:link,
+.footerIcon:visited {
+  color: var(--black);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.footerIcon:hover,
+.footerIcon:active {
+  color: var(--color-gold);
+}
+
+.footerIcon:not(:last-child) {
+  margin-right: 1.5rem;
+}
+
+.disconnectModal,
+.iconInfoModal {
+  animation-name: grow;
+  animation-duration: 0.3s;
+}
+
+.disconnectDialog,
+.iconInfoDialog {
+  width: 95vw;
+  margin: 0px auto;
+}
+
+.disconnectModalBody {
+  padding: 1rem;
+}
+
+.disconnectModalTitle,
+.iconInfoModalTitle {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.disconnectModalDescription,
+.iconInfoModalDescription {
+  font-size: 1.2rem;
+}
+
+.iconInfoModalDescription {
+  margin-top: 0.6rem;
+}
+
+.disconnectModalDescription {
+  margin-top: 1.6rem;
+}
+
+.disconnectModalFooter {
+  background-color: var(--color-gray-1);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.disconnectModalCancelButton,
+.disconnectModalDisconnectButton {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+
+.disconnectModalCancelButton:hover,
+.disconnectModalCancelButton:active {
+  background-color: transparent;
+  color: #666;
+}
+
+.disconnectModalCancelButton {
+  color: #666;
+  margin-right: 1rem;
+}
+
+.disconnectModalDisconnectButton {
+  background-color: var(--color-danger);
+  color: #fff;
+  padding: 1rem 3rem;
+  border-radius: 9999px;
+}
+
+.disconnectModalDisconnectButton:hover,
+.disconnectModalDisconnectButton:active {
+  background-color: var(--color-danger);
+  color: #fff;
+}
+
+.iconInfoModalBody {
+  position: relative;
+  padding: 1.5rem 1rem 1rem 1rem;
+}
+
+.modalCloseIcon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: transparent;
+  line-height: 100%;
+  border: none;
+  outline: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.modalCloseIcon:focus {
+  background-color: transparent;
+  color: var(--black);
+}
+
+.iconInfoTermDescriptionBox {
+  margin-top: 2rem;
+}
+
+.iconInfoStepDescription {
+  font-size: 1.2rem;
+}
+
+.iconInfoStepDescription span {
+  font-weight: 700;
+  margin-right: 0.4rem;
+}
+
+.iconInfoStepDescription:not(:last-child) {
+  margin-bottom: 1.4rem;
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(0.6);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  .disconnectDialog {
+    width: 35rem;
+  }
+
+  .iconInfoDialog {
+    width: 45rem;
+  }
+
+  .iconInfoModalTitle {
+    font-size: 1.6rem;
+  }
+
+  .iconInfoStepDescription {
+    font-size: 1.4rem;
+  }
+
+  .iconInfoModalDescription {
+    font-size: 1.4rem;
+  }
+
+  .disconnectModalBody {
+    padding: 2rem;
+  }
+
+  .iconInfoModalBody {
+    padding: 2rem;
+  }
+
+  .disconnectModalTitle {
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+
+  .disconnectModalDescription {
+    font-size: 1.4rem;
+  }
+
+  .donationButtonBox {
+    justify-content: flex-start;
+  }
+
+  .sectionInfoBox {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 1.5rem;
+  }
+
+  .sectionTitleBox {
+    margin-bottom: 0px;
+  }
+
+  .sortOptionsBox {
+    margin-left: auto;
+    margin-bottom: -1.3rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .donationPledgText {
+    font-size: 1.6rem;
+  }
+
+  .footer {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .footerCopy {
+    margin-bottom: 0.3rem;
+  }
+
+  .footerNav {
+    order: 4;
+  }
+
+  .footer ul {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer ul li:not(:last-child)::after {
+    display: block;
+    content: "";
+    width: 1px;
+    height: 15px;
+    background-color: var(--black);
+    margin: 0px 0.5rem;
+  }
+
+  .footerIconsBox {
+    margin-top: 0px;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .header {
+    margin: 0px -8px;
+  }
+}

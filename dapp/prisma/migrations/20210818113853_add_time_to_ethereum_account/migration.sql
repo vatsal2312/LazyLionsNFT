@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "EthereumAccount" ADD COLUMN     "linkedAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP;
