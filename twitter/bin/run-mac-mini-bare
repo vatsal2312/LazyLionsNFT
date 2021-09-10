@@ -1,0 +1,10 @@
+#!/usr/bin/env sh
+set -ex
+export SAMPLE_ALL=1
+export GRAPH_NODE_URL=http://localhost:8000/subgraphs/name/liamzebedee/lazylions-mainnet
+DIR=$(dirname "$0")
+
+
+date
+cd $DIR/..
+node src/index.js >>log.txt 2>&1

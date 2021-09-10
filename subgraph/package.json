@@ -1,0 +1,32 @@
+{
+  "name": "spam-subgraph",
+  "version": "0.1.0",
+  "scripts": {
+    "create": "graph create liamzebedee/lazylions-mainnet --node https://api.thegraph.com/deploy/",
+    "create-local": "graph create liamzebedee/lazylions-mainnet --node http://127.0.0.1:8020",
+    "refresh-local": "graph remove liamzebedee/lazylions-mainnet --node http://127.0.0.1:8020 && yarn create-local && yarn deploy-local",
+    "build": "graph build subgraph.js",
+    "deploy": "./deploy.sh",
+    "deploy-local": "NETWORK=mainnet ./deploy.sh",
+    "codegen": "graph codegen subgraph.js"
+  },
+  "devDependencies": {
+    "@graphprotocol/graph-cli": "^0.20.1",
+    "@graphprotocol/graph-ts": "^0.20.1",
+    "ipfs-core": "^0.5.1",
+    "multihashes": "^3.1.2"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "babel-register": "^6.26.0",
+    "cids": "^1.1.5",
+    "ethers": "^5.4.4",
+    "glob": "^7.1.6",
+    "js-yaml": "^4.1.0",
+    "multihashing": "^0.3.3",
+    "mustache": "^4.1.0",
+    "truffle": "^5.0.4",
+    "truffle-contract": "^4.0.5",
+    "truffle-hdwallet-provider": "^1.0.4"
+  }
+}

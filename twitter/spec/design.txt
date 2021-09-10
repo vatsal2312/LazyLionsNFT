@@ -1,0 +1,15 @@
+```
+read the holders
+every hour, load the holders, select 1/24 of holders that havne't been checked
+    check each holder
+        if twitterlogin:
+            load NFT image
+            load twitter PFP
+                curl --request GET \
+                    --url 'https://api.twitter.com/1.1/users/show.json?screen_name=liamzebedee' \
+                    --header 'authorization: Bearer AAAAAAAAAAAAAAAAAAAAAA7OSgEAAAAADY%2FOZUHyy4%2BpHJAbM%2BGVAoScXD8%3DsQZwWgQ8qNF7EsFUTvbhKQgFQkNQjmTmbNN7fAMaXIf65nS91O' | jq
+                jq .profile_image_url
+                strip the underscore to get full size image
+            is_match = perceptual_hash(nft_image, twitter_pfp)
+            add row to table
+```

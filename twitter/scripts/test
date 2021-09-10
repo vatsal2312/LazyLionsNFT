@@ -1,0 +1,3 @@
+curl --request GET \
+    --url 'https://api.twitter.com/1.1/users/show.json?screen_name=liamzebedee' \
+    --header 'authorization: Bearer AAAAAAAAAAAAAAAAAAAAAA7OSgEAAAAADY%2FOZUHyy4%2BpHJAbM%2BGVAoScXD8%3DsQZwWgQ8qNF7EsFUTvbhKQgFQkNQjmTmbNN7fAMaXIf65nS91O'

@@ -1,0 +1,48 @@
+
+type TokenContract @entity {
+  id: ID!
+  # holders: [Holder!]! @derivedFrom(field: "tokenContract")
+  tokens: [ERC721Token]! @derivedFrom(field: "tokenContract")
+  transfers: [ERC721TokenTransfer]! @derivedFrom(field: "tokenContract")
+}
+
+type ERC721Token @entity {
+  # ${contract}_${id}
+  id: ID!
+  tokenId: BigInt!
+  owner: Holder!
+  tokenContract: TokenContract!
+  # uri: String
+  
+  ownership: [Ownership!]! @derivedFrom(field: "token")
+  numOwners: Int!
+  currentOwnership: Ownership!
+}
+
+type Ownership @entity {
+  id: ID!
+  token: ERC721Token!
+  owner: Holder!
+
+  # Date acquired.
+  start: BigInt
+  
+  # Date disposed.
+  # can be null if current owner.
+  end: BigInt
+}
+
+type Holder @entity {
+  # Address.
+  id: ID!
+  tokens: [ERC721Token!]! @derivedFrom(field: "owner")
+}
+
+type ERC721TokenTransfer @entity {
+  id: ID!
+  tokenContract: TokenContract!
+  token: ERC721Token!
+  from: String!
+  to: String!
+  date: BigInt!
+}

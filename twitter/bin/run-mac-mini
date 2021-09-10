@@ -1,0 +1,10 @@
+#!/usr/bin/env zsh
+set -ex
+export SAMPLE_ALL=0
+export GRAPH_NODE_URL=http://localhost:8000/subgraphs/name/liamzebedee/lazylions-mainnet
+DIR=$(dirname "$0")
+
+
+date
+cd $DIR/..
+/Users/liamz/.nvm/versions/node/v16.4.0/bin/node src/index.js >>log-cron.txt 2>&1

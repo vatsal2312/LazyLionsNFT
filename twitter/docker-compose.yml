@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  bot:
+    build: 
+      context: ..
+      dockerfile: ./twitter/Dockerfile
+    image: twitter
+    volumes:
+      - ./docker/var/log:/var/log/
+      - ./.env:/opt/app/twitter/.env
