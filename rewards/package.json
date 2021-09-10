@@ -1,0 +1,21 @@
+{
+  "name": "royalties",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^2.29.1",
+    "ethers": "^5.4.5",
+    "graphql-request": "^3.5.0",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1",
+    "prisma": "^2.29.1",
+    "request": "^2.88.2"
+  }
+}

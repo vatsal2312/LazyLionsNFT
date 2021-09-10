@@ -1,0 +1,11 @@
+
+
+For all lion holders for this period - send amount
+For all lion holders
+For each lion holder
+Calculate time signalling (days) using twitter DP
+Reduce twitterchecks
+Add to total time signalling for all users during this period
+totalSignalledTime = 100000
+Now calculate each user’s weight of the 1% of royalties based on this
+Now distribute royalties
